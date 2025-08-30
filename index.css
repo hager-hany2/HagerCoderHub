@@ -6,6 +6,7 @@
             padding: 0;
             font-family: 'Cairo', sans-serif;
             direction: rtl;  
+            width: 100%;
         }
         
         body.en {
@@ -76,3 +77,4 @@
             animation: fadeIn 1s ease-out;
 
         }
+
