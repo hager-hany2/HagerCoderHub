@@ -2,8 +2,10 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
         body {
+            margin: 0;
+            padding: 0;
             font-family: 'Cairo', sans-serif;
-            direction: rtl;
+            direction: rtl;  
         }
         
         body.en {
@@ -72,4 +74,5 @@
 
         .fade-in-up {
             animation: fadeIn 1s ease-out;
+
         }
