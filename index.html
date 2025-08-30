@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hager Coder Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-yF3t6TF8jeI0Sh5qF0j9K6C+V0fUJzjv8bTl+UtbPpn0I1b8ZmHU5o+G1+kN5P4q7vRwE9+xIv2lPEH8l1fDw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2 space-x-reverse">
+                <span class="text-2xl font-bold text-gradient">Hager Coder Hub</span>
+            </a>
+            <ul class="hidden md:flex space-x-12" id="nav-menu">
+                <li><a href="#intro" class="nav-link font-semibold" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                <li style="margin-right: 30px;"><a href="#about" class="nav-link font-semibold" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                <li><a href="#services" class="nav-link font-semibold" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+                <li><a href="#projects" class="nav-link font-semibold" data-ar="المشاريع" data-en="Projects">المشاريع</a></li>
+                <li><a href="#team" class="nav-link font-semibold" data-ar="فريق العمل" data-en="Our Team">فريق العمل</a></li>
+                <li><a href="#contact" class="nav-link font-semibold" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a></li>
+            </ul>
+            <div class="flex items-center space-x-4 md:space-x-8">
+                <button id="lang-toggle-button" class="bg-gray-200 text-gray-800 font-semibold py-2 px-4 rounded-full shadow-md transition-colors duration-300 hover:bg-gray-300">
+                    English
+                </button>
+                <div class="md:hidden">
+                    <button id="menu-button" class="text-gray-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-2">
+            <ul class="flex flex-col items-center space-y-4">
+                <li><a href="#intro" class="nav-link font-semibold" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                <li><a href="#about" class="nav-link font-semibold" data-ar="من نحن" data-en="About Us">من نحن</a></li>
+                <li><a href="#services" class="nav-link font-semibold" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+                <li><a href="#projects" class="nav-link font-semibold" data-ar="المشاريع" data-en="Projects">المشاريع</a></li>
+                <li><a href="#team" class="nav-link font-semibold" data-ar="فريق العمل" data-en="Our Team">فريق العمل</a></li>
+                <li><a href="#contact" class="nav-link font-semibold" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="intro" class="bg-gradient-to-br from-blue-50 to-indigo-100 py-24 md:py-48 text-center relative overflow-hidden" data-aos="fade-up">
+            <!-- Background Circles -->
+            <div class="absolute inset-0 z-0">
+                <div class="absolute w-64 h-64 bg-blue-300 rounded-full opacity-10 blur-3xl -top-20 -left-20 animate-pulse"></div>
+                <div class="absolute w-96 h-96 bg-indigo-300 rounded-full opacity-10 blur-3xl -bottom-20 -right-20 animate-pulse-slow"></div>
+            </div>
+            <div class="container mx-auto px-4 relative z-10">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-4 fade-in-up">
+                    <span class="text-gray-800" data-ar="مرحبًا بكم في" data-en="Welcome to">مرحبًا بكم في</span>
+                    <span class="text-gradient block mt-2">Hager Coder Hub</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto fade-in-up" style="animation-delay: 0.5s;" data-ar="نحن نترجم أفكارك إلى حلول برمجية قوية وواقعية، مصممة خصيصًا لتلبية احتياجات عملك وتحقيق أهدافك." data-en="We translate your ideas into powerful and realistic software solutions, designed specifically to meet your business needs and achieve your goals.">نحن نترجم أفكارك إلى حلول برمجية قوية وواقعية، مصممة خصيصًا لتلبية احتياجات عملك وتحقيق أهدافك.</p>
+                <a href="#services" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 fade-in-up" style="animation-delay: 1s;" data-ar="اكتشف خدماتنا" data-en="Discover Our Services">
+                    اكتشف خدماتنا
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="bg-white py-20 md:py-24" data-aos="fade-up">
+            <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-4xl font-bold text-gray-800" data-ar="من نحن؟" data-en="About Us">من نحن؟</h2>
+                    <p class="text-gray-600 leading-relaxed" data-ar="فريقنا من المطورين والمصممين يعمل معًا لتقديم منتجات عالية الجودة تجمع بين الأداء، السهولة، وتجربة المستخدم المميزة." data-en="Our team of talented developers and designers work together to deliver high-quality products combining performance, simplicity, and exceptional user experience.">
+                        فريقنا من المطورين والمصممين يعمل معًا لتقديم منتجات عالية الجودة تجمع بين الأداء، السهولة، وتجربة المستخدم المميزة.  
+                    </p>
+                    <p class="text-gray-600 leading-relaxed" data-ar="في Hager Coder Hub نؤمن أن كل مشروع هو فرصة لصناعة بصمة فريدة، ونلتزم بالابتكار، الدعم المستمر، وتقديم تجربة عملاء استثنائية من البداية وحتى الإطلاق." data-en="At Hager Coder Hub, we believe every project is a chance to create something unique. We are committed to innovation, continuous support, and delivering an outstanding customer journey from start to finish.">
+                       في Hager Coder Hub نؤمن أن كل مشروع هو فرصة لصناعة بصمة فريدة، ونلتزم بالابتكار، الدعم المستمر، وتقديم تجربة عملاء استثنائية من البداية وحتى الإطلاق.
+                    </p>
+                </div>
+                <div class="relative" data-aos="fade-left">
+                    <img src="483591361_2413649398978341_3702625475932532768_n (1).jpg" alt="About Us Image" class="w-full h-auto rounded-xl shadow-xl">
+                    <div class="absolute inset-0 bg-blue-500 opacity-20 rounded-xl"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="bg-gray-50 py-20 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up" data-ar="خدماتنا" data-en="Our Services">خدماتنا</h2>
+                <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-ar="نقدم مجموعة واسعة من الخدمات البرمجية لتلبية جميع احتياجات عملك." data-en="We offer a wide range of software services to meet all your business needs.">نقدم مجموعة واسعة من الخدمات البرمجية لتلبية جميع احتياجات عملك.</p>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                     <div class="card bg-white p-8 rounded-xl shadow-lg border border-gray-100" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="text-4xl text-blue-500 mb-4">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-2" data-ar="تطوير المواقع وتطبيقات الويب" data-en="Web & Application Development">تطوير المواقع وتطبيقات الويب</h3>
+                        <p class="text-gray-600" data-ar="نصمم ونطور مواقع وتطبيقات ويب ديناميكية وسريعة الاستجابة باستخدام أحدث التقنيات." data-en="We design and develop dynamic and responsive websites and web applications using the latest technologies.">نصمم ونطور مواقع وتطبيقات ويب ديناميكية وسريعة الاستجابة باستخدام أحدث التقنيات.</p>
+                    </div>
+                    <div class="card bg-white p-8 rounded-xl shadow-lg border border-gray-100" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="text-4xl text-blue-500 mb-4">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-2" data-ar="حلول قواعد البيانات" data-en="Database Solutions">حلول قواعد البيانات</h3>
+                        <p class="text-gray-600" data-ar="نقدم خدمات تصميم وإدارة قواعد البيانات لضمان كفاءة وأمان بياناتك." data-en="We provide database design and management services to ensure the efficiency and security of your data.">نقدم خدمات تصميم وإدارة قواعد البيانات لضمان كفاءة وأمان بياناتك.</p>
+                    </div>
+                    <div class="card bg-white p-8 rounded-xl shadow-lg border border-gray-100" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="text-4xl text-blue-500 mb-4">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-2" data-ar="ذكاء الأعمال والتحليلات" data-en="Business Intelligence & Analytics">ذكاء الأعمال والتحليلات</h3>
+                        <p class="text-gray-600" data-ar="نساعدك على فهم بياناتك واتخاذ قرارات أفضل من خلال حلول ذكاء الأعمال المتقدمة." data-en="We help you understand your data and make better decisions through advanced business intelligence solutions.">نساعدك على فهم بياناتك واتخاذ قرارات أفضل من خلال حلول ذكاء الأعمال المتقدمة.</p>
+                    </div>
+                    <div class="card bg-white p-8 rounded-xl shadow-lg border border-gray-100" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="text-4xl text-blue-500 mb-4">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-2" data-ar="أمن المعلومات" data-en="Information Security">أمن المعلومات</h3>
+                        <p class="text-gray-600" data-ar="نؤمن حلولك البرمجية ضد التهديدات السيبرانية ونضمن حماية بياناتك." data-en="We secure your software solutions against cyber threats and ensure the protection of your data.">نؤمن حلولك البرمجية ضد التهديدات السيبرانية ونضمن حماية بياناتك.</p>
+                    </div>
+                    <div class="card bg-white p-8 rounded-xl shadow-lg border border-gray-100" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="text-4xl text-blue-500 mb-4">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-2" data-ar="استشارات برمجية" data-en="Software Consulting">استشارات برمجية</h3>
+                        <p class="text-gray-600" data-ar="نقدم استشارات فنية متخصصة لمساعدتك في التخطيط لمشاريعك البرمجية." data-en="We provide specialized technical consultations to help you plan your software projects.">نقدم استشارات فنية متخصصة لمساعدتك في التخطيط لمشاريعك البرمجية.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section - Now with Videos -->
+        <section id="projects" class="bg-white py-20 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up" data-ar="مشاريعنا" data-en="Our Projects">مشاريعنا</h2>
+                <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-ar="نحن فخورون بالنتائج التي حققناها مع عملائنا. إليك بعض أعمالنا المميزة." data-en="We are proud of the results we have achieved with our clients. Here are some of our outstanding works.">نحن فخورون بالنتائج التي حققناها مع عملائنا. إليك بعض أعمالنا المميزة.</p>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card bg-gray-50 rounded-xl shadow-lg border border-gray-100 overflow-hidden" data-aos="fade-right" data-aos-delay="100">
+                        <div class="relative pt-[56.25%] w-full">
+                            <iframe 
+                                class="absolute top-0 left-0 w-full h-full"
+                                src="https://player.vimeo.com/video/1095241085?h=2eac1a8de3&app_id=122963" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold mb-2" data-ar="تطوير لوحة معلومات المسؤول مع الأدوار المتقدمة والتحليلات" data-en="Admin Dashboard Development with Advanced Roles & Analytics"> تطوير لوحة معلومات المسؤول مع الأدوار المتقدمة والتحليلات</h3>
+                            <p class="text-gray-600 text-sm" data-ar="طوّرنا لوحة تحكم إدارية احترافية باستخدام Laravel وFilament وMySQL لتوفير تحكم كامل بالمستخدمين والأذونات وأنشطة النظام. صُممت لوحة التحكم مع مراعاة احتياجات العمل، وضمان الأمان والشفافية والكفاءة." data-en="Developed a professional admin dashboard using Laravel, Filament, and MySQL to provide full control over users, permissions, and system activities.The dashboard was designed with business needs in mind, ensuring security, transparency, and efficiency.">طوّرنا لوحة تحكم إدارية احترافية باستخدام Laravel وFilament وMySQL لتوفير تحكم كامل بالمستخدمين والأذونات وأنشطة النظام. صُممت لوحة التحكم مع مراعاة احتياجات العمل، وضمان الأمان والشفافية والكفاءة.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-gray-50 rounded-xl shadow-lg border border-gray-100 overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <div class="relative pt-[56.25%] w-full">
+                            <iframe 
+                                class="absolute top-0 left-0 w-full h-full"
+                                src="https://player.vimeo.com/video/1095245995?h=e9dd7e7a2f&app_id=122963" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold mb-2" data-ar="تطوير واجهة أمامية موجهة نحو التسويق لموقع ALBOURK الإلكتروني " data-en="Marketing-Oriented Front-End Development for ALBOURK Website">تطوير واجهة أمامية موجهة نحو التسويق لموقع ALBOURK الإلكتروني </h3>
+                            <p class="text-gray-600 text-sm" data-ar="قمنا ببناء وتصميم الواجهة الأمامية لموقع ALBOURK على الويب بنهج يركز على التسويق للمساعدة في جذب العملاء وإشراكهم." data-en="An explanatory video that allows users to easily book appointments with doctors and experts.">قمنا ببناء وتصميم الواجهة الأمامية لموقع ALBOURK على الويب بنهج يركز على التسويق للمساعدة في جذب العملاء وإشراكهم.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-gray-50 rounded-xl shadow-lg border border-gray-100 overflow-hidden" data-aos="fade-left" data-aos-delay="300">
+                        <div class="relative pt-[56.25%] w-full">
+                            <iframe 
+                                class="absolute top-0 left-0 w-full h-full"
+                                src="https://player.vimeo.com/video/1113330313?app_id=122963" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="p-6 text-center">
+                            <h3 class="text-xl font-bold mb-2" data-ar="موقع ترويجي وتسويقي لشركة هاني الشاهد – منتجات الألومنيوم والواجهات " data-en="Promotional & Marketing Website for Hany Elshahed – Aluminum & Cladding Products">موقع ترويجي وتسويقي لشركة هاني الشاهد – منتجات الألومنيوم والواجهات </h3>
+                            <p class="text-gray-600 text-sm" data-ar="صممنا وطوّرنا موقعًا إلكترونيًا ترويجيًا متجاوبًا لشركة هاني الشاهد، المتخصصة في حلول الألومنيوم والواجهات. يركز الموقع على عرض المنتجات والخدمات بطريقة جذابة وعصرية وتسويقية لجذب انتباه العملاء. " data-en="Designed and developed a responsive promotional website for Hany Elshahed, specialized in aluminum and cladding solutions.The website focuses on showcasing products and services in an attractive, modern, and marketing-oriented way to capture customer attention.">صممنا وطوّرنا موقعًا إلكترونيًا ترويجيًا متجاوبًا لشركة هاني الشاهد، المتخصصة في حلول الألومنيوم والواجهات. يركز الموقع على عرض المنتجات والخدمات بطريقة جذابة وعصرية وتسويقية لجذب انتباه العملاء. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="bg-gray-50 py-20 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up" data-ar="فريق العمل" data-en="Our Team">فريق العمل</h2>
+                <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-ar="فريقنا يجمع بين الخبرة والشغف لتقديم أفضل النتائج." data-en="Our team combines expertise and passion to deliver the best results.">فريقنا يجمع بين الخبرة والشغف لتقديم أفضل النتائج.</p>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 justify-center">
+                    <!-- Team Member 1 -->
+                    <div class="card bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
+                        <img src="1734387380594.jpeg" alt="Team Member 1" class="rounded-full w-40 h-40 object-cover mb-4">
+                        <h3 class="text-xl font-bold" data-ar="هاجرهاني" data-en="Hager Hany">هاجرهاني</h3>
+                        <p class="text-blue-600 font-semibold mb-1" data-ar="مديرة مشروع" data-en="Project Manager">مديرة مشروع</p>
+                        <p class="text-blue-600 font-semibold mb-2" data-ar="مطور مواقع" data-en="Full Stack Developer">مطور مواقع</p>
+                        <p class="text-gray-500 text-sm text-center" data-ar="متخصصة في إدارة المشاريع مع خبرة واسعة في تطوير تطبيقات الويب باستخدام Bootstrap و Laravel." data-en="Specialized in project management with extensive experience in web development using Bootstrap and Laravel.">متخصصة في إدارة المشاريع مع خبرة واسعة في تطوير تطبيقات الويب باستخدام Bootstrap و Laravel.</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="card bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+                        <img src="WhatsApp Image 2025-08-26 at 22.05.04_18df4c23.jpg" alt="Team Member 2" class="rounded-full w-40 h-40 object-cover mb-4">
+                        <h3 class="text-xl font-bold" data-ar="محمد شريف" data-en="Mohamed Sherif">محمد شريف</h3>
+                        <p class="text-blue-600 font-semibold mb-1" data-ar="مطور مواقع" data-en="Full Stack Developer">مطور مواقع</p>
+                        <p class="text-gray-500 text-sm text-center mt-2" data-ar="خبير في تطوير تطبيقات الويب باستخدام React و Node.js." data-en="An expert in developing web applications using React and Node.js.">خبير في تطوير تطبيقات الويب باستخدام React و Node.js.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-gray-50 py-20 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4" data-aos="fade-up" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2>
+                <p class="text-lg text-gray-600 mb-12 max-w-2xl mx-auto" data-aos="fade-up" data-ar="نحن جاهزون للإجابة على استفساراتك ومناقشة مشروعك القادم." data-en="We are ready to answer your inquiries and discuss your next project.">نحن جاهزون للإجابة على استفساراتك ومناقشة مشروعك القادم.</p>
+                <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="300">
+                    <form id="contact-form" action="https://formspree.io/f/mldwbbnr" method="POST" class="space-y-6">
+                        <div>
+                            <input type="text" id="name" name="name" placeholder="الاسم الكامل" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <input type="email" id="email" name="email" placeholder="البريد الإلكتروني" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <input type="phone" id="phone" name="phone" placeholder=" رقم الهاتف" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <textarea id="message" name="message" rows="4" placeholder="رسالتك" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition duration-300">
+                            أرسل الرسالة
+                        </button>
+                        <div id="contact-success-message" class="hidden mt-4 text-green-600 font-semibold" data-ar="شكرًا لك! تم إرسال رسالتك بنجاح." data-en="Thank you! Your message has been sent successfully.">
+                           شكرًا لك! تم إرسال رسالتك بنجاح.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-12" data-aos="fade-up">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-right mb-8">
+                <!-- Brand Info -->
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-2xl font-bold mb-4">
+                        <span class="text-gradient">Hager Coder Hub</span>
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed" data-ar="حلول برمجية مبتكرة وموثوقة لنمو عملك." data-en="Innovative and reliable software solutions for your business growth.">حلول برمجية مبتكرة وموثوقة لنمو عملك.</p>
+                </div>
+                <!-- Contact Info -->
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-lg font-semibold mb-4" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center justify-center md:justify-end space-x-2 space-x-reverse">
+                            <i class="fa-solid fa-envelope text-blue-400"></i>
+                            <span>hagerhanyahmedali@gmail.com</span>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-end space-x-2 space-x-reverse">
+                            <i class="fa-solid fa-phone text-blue-400"></i>
+                            <span>01112824937</span>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <!-- Social Media Links -->
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="text-lg font-semibold mb-4" data-ar="تابعنا" data-en="Follow Us">تابعنا</h4>
+                    <div class="flex justify-center md:justify-end gap-4 text-blue-400 text-2xl">
+                        <a href="https://www.linkedin.com/in/hager-hany-3245a2324/" class="hover:text-white transition-colors duration-300" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61573968213607" class="hover:text-white transition-colors duration-300" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/201112824937" class="hover:text-white transition-colors duration-300" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm" data-aos="fade-up" data-aos-delay="400">
+                <p>&copy; 2025 Hager Coder Hub. <span data-ar="جميع الحقوق محفوظة." data-en="All Rights Reserved.">جميع الحقوق محفوظة.</span></p>
+            </div>
+        </div>
+    </footer>
+    <!-- WhatsApp Button -->
+    <div class="btnlink" id="bb">
+        <a href="https://wa.me/201112824937" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
